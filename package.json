@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This was learning backend",
+  "keywords": [
+    "backend"
+  ],
+  "homepage": "https://github.com/Kaamessh/backend#readme",
+  "bugs": {
+    "url": "https://github.com/Kaamessh/backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaamessh/backend.git"
+  },
+  "license": "ISC",
+  "author": "kaamesh",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "bcrypt": "^6.0.0",
+    "corn": "^0.0.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.3",
+    "morgan": "^1.11.0"
+  }
+}
