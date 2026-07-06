@@ -5,11 +5,15 @@ const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
 const logger = require("./middleware/loggerMiddleware");
+const notFound = require("./middleware/notFoundMiddleware");
+const errorHandler = require("./middleware/errorMiddleware");
 app.use(logger);
 app.use(express.json());
 connectDB();
 app.use(userRoutes);
 app.use(productRoutes); 
+app.use(notFound);
+app.use(errorHandler);
 const PORT = 7001;
 app.listen(PORT, () => {
     console.log(`Server Running on http://localhost:${PORT}`);
