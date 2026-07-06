@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
-const productRoutes = require("./routes/poductRoutes");
+const productRoutes = require("./routes/productRoutes");
 const logger = require("./middleware/loggerMiddleware");
 app.use(logger);
 app.use(express.json());
